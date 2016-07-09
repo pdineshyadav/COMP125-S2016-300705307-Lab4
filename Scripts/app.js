@@ -3,9 +3,9 @@
 /**
 Filename = app.js
 @author Dinesh Palle
-@date : 10th June 2016
+@date : 8th July 2016
 StudentID : 300705307
-Website : http://comp125assignment2update.azurewebsites.net/index.html
+Website : http://comp125lab4.azurewebsites.net/
 @description : This is the main javascript file of this website
 */
 
@@ -15,20 +15,16 @@ Website : http://comp125assignment2update.azurewebsites.net/index.html
     // Code goes here
     "use strict";
 
-    
 
-
-
-
-
-        // Event listner with inline anonymous event handler function
-        contactForm.addEventListener("submit", function (event) {
+    // Event listner with inline anonymous event handler function
+    contactForm.addEventListener("submit", function (event) {
         event.preventDefault();
 
         formInputOnConsole();
 
+
         contactForm.reset();
-        })
+    })
 
 
 
@@ -36,8 +32,7 @@ Website : http://comp125assignment2update.azurewebsites.net/index.html
     // formInputOnConsole function 
     function formInputOnConsole() {
 
-        function User(username, password)
-        {
+        function User(username, password) {
             this.userName = username;
             this.Password = password;
         }
@@ -45,7 +40,7 @@ Website : http://comp125assignment2update.azurewebsites.net/index.html
         var user = new User(username.value, password.value)
 
         console.log(user);
- 
+
     }
 
 
